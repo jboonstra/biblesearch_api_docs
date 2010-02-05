@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Book Group
+title: Book Groups
 ---
 
 # Book Groups
