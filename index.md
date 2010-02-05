@@ -71,13 +71,15 @@ Successful update requests return the response code "200 OK."
 
 ## Deleting (HTTP DELETE requests)
 
-You may delete content you, yourself, have created by sending an HTTP DELETE request:
+You may delete content you, yourself, have created by sesnding an HTTP DELETE request:
 
     curl -u #{your API TOKEN}:X -X DELETE http://@ABS_URL/tags/5.xml
     
 *Please note:* The content-type header is not needed for DELETE requests, since you are not sending any XML to the ABS API.  
 
-Successful update requests return the response code "200 OK."
+Successful update requests return the response code "200 OK" and the updated object in the response body.
+
+Successful delete requests return the response code "200 OK" and an empty response body.
 
 ## Response codes
 
