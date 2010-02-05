@@ -9,20 +9,20 @@ By convention, books of the Bible are often organized into groups, such as the P
 
 ## List
 
-### Get /bookgroup.xml
+### Get /bookgroups.xml
 
 Returns a list of all book groups in all versions.
 
 ## Show
 
-### GET /bookgroup/1.xml
+### GET /bookgroups/1.xml
 
 Returns the specified book grouping resource with ID=1.
 
-### GET /bookgroup/1.xml?include=version
+### GET /bookgroups/1.xml?include=version
 
 You may pass an *include* query parameter with value *version* with your request, to enclose your bookgroup resource in its parent version resource.
 
-### GET /bookgroup/1.xml?include=books
+### GET /bookgroups/1.xml?include=books
 
 You may pass an *include* query parameter with value *books* with your request, to include a list of the books resources it contains.
