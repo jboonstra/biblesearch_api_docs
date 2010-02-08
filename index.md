@@ -69,6 +69,10 @@ A sample update request:
 
 Successful update requests return the response code "200 OK."
 
+## Errors
+
+Error responses from the server will return a response code in the range 400-499.  When appropriate, error responses will contain error messages formatted in either XML or JSON (depending on the requested content type) to explain what caused the error.
+
 ## Deleting (HTTP DELETE requests)
 
 You may delete content you, yourself, have created by sesnding an HTTP DELETE request:
