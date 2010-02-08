@@ -39,11 +39,39 @@ You may pass an *include* query parameter with value *verses* with your request 
 
 Creates a note resource for the verse(s) you pass to it in the body of your XML request.
 
+<code>
+  <notes>
+    <note>
+      <title>Some Title</title>
+      <body>Some body text.</body>
+      <verses>
+        <verse id="1" />
+        <verse id="3" />
+        <verse id="5" />
+      </verses>
+    </note>
+  </notes>
+ </code>
+
 ## Update
 
 ### PUT /notes/1.xml
 
 Updates the note identified by ID=1 with content of the submitted XML.
+
+<code>
+  <notes>
+    <note>
+      <title>New Title</title>
+      <body>New body text.</body>
+      <verses>
+        <verse id="1" />
+        <verse id="3" />
+        <verse id="4" /> 
+      </verses>
+    </note>
+  </notes>
+ </code>
 
 ## Delete
 
