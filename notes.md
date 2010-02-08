@@ -25,7 +25,7 @@ You may pass an *include* query parameter with value *verses* with your request 
 
 ### GET /notes/1.xml
 
-Returns the note identified by ID 1.  
+Returns the note identified by ID=1.  
 
 ## Show with verses
 
@@ -43,12 +43,12 @@ Creates a note resource for the verse(s) you pass to it in the body of your XML 
 
 ### PUT /notes/1.xml
 
-Updates the note identified by ID 1 with content of the submitted XML.
+Updates the note identified by ID=1 with content of the submitted XML.
 
 ## Delete
 
 ### DELETE /notes/1.xml
 
-Deletes the note identified by ID 1.
+Deletes the note identified by ID=1.
 
 *Please note:* The content-type header is not needed for DELETE requests, since you are not sending any XML to the ABS API.

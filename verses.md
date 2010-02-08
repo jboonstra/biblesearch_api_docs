@@ -9,11 +9,7 @@ Verses are the smallest unit of organization within the ABS Bible texts.  Verses
     
 ## List
 
-### GET /verses.xml (with pagination: /verses.xml?n=#{offset})
-                             
-Returns a list of all verses, paginated in groups of 500.  A request for ?n=500 returns the second batch of 500, ?n=1000 the third batch, etc.
-
-TODO: Should these requests be throttled to prevent scraping of entire texts?
+Book listings may only be requested in the context their chapter parent.
 
 ### GET /chapters/#{chapter_id}/verses.xml (with pagination: /verses.xml?n=#{offset})
 
@@ -25,7 +21,7 @@ TODO: are there chapters with more than 500 verses?
 
 ### GET /verses/1.xml
 
-Returns the specific verse resource with ID 1.
+Returns the specific verse resource with ID=1.
 
 ### GET /verses/1.xml?include=chapter
 

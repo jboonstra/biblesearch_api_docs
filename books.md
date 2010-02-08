@@ -5,21 +5,23 @@ title: Books
 
 # Books
 
-These are the books of the Bible belonging to the requested version.  Books belong to versions and have many chapters.
+These are the books of the Bible belonging to the requested version.  Books belong to versions and to bookgroups, and books have many chapters.
 
 ## List
 
-### Get /books.xml
+Book listings may only be requested in the context of version or bookgroup parents.
 
-Returns a list of all books for all versions.
+### GET /versions/1/books.xml
 
-### Get /books.xml?bookgroup=#{abbreviation}
+Returns a list of a books for the version resource with ID=1.
 
-Returns a list of only those books identified by the group abbreviation of a <a href="bookgroups.html">book group</a>.
+### GET /bookgroups/1/books.xml
 
-### Get /books.xml?testament=#{abbreviation}
+Returns a list of all books for the bookgroup resource with ID=1.
 
-Returns a list of only those books identified by the Testament abbreviation.  Valid abbreviations include NT (New Testament), OT (Old Testament) and DEUT (Deuterocanonical).
+### GET /versions/1/books.xml?testament=#{abbreviation}
+
+Returns a list of only those books identified by the Testament abbreviation for the version resource with ID=1.  Valid abbreviations include NT (New Testament), OT (Old Testament) and DEUT (Deuterocanonical).
 
 ## Show
 

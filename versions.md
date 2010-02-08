@@ -27,7 +27,7 @@ Returns a list of all versions specified by the language parameter.  Use an [ISO
     
 ### GET /versions/1.xml
 
-Returns a specific version with ID 1.
+Returns a specific version with ID=1.
 
 ## Show with Books
 

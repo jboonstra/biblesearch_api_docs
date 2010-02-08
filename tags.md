@@ -11,7 +11,11 @@ Tags are annotations you apply to selected Bible verses.  Tags belong to users.
 
 ### GET /tags.xml
 
-Returns all of your tags.
+Returns all, site-wide tags.
+
+### GET /users/1/tags.xml
+
+Returns a list of tags for the user resource with ID=1.  *Please note:* You may only view tags for your own user resource.
 
 ## List with verses
 
@@ -25,7 +29,7 @@ You may pass an *include* query parameter with value *verses* with your request 
 
 ### GET /tags/1.xml
 
-Returns the tag identified by ID 1.  
+Returns the tag identified by ID=1.  
 
 ## Show with verses
 
@@ -43,12 +47,12 @@ Creates a tag resource for the verse(s) you pass to it in the body of your XML r
 
 ### PUT /tags/1.xml
 
-Updates the tag identified by ID 1 with content of the submitted XML.
+Updates the tag identified by ID=1 with content of the submitted XML.
 
 ## Delete
 
 ### DELETE /tags/1.xml
 
-Deletes the tag identified by ID 1.
+Deletes the tag identified by ID=1.
 
-*Please tag:* The content-type header is not needed for DELETE requests, since you are not sending any XML to the ABS API.
+*Please note:* The content-type header is not needed for DELETE requests, since you are not sending any XML to the ABS API.
