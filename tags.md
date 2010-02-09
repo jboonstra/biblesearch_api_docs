@@ -53,16 +53,14 @@ For both situations, you may also replace the tag ID with the tag name: .../tags
 
 Creates a tag resource for the verse(s) you pass to it in the body of your XML request.
 
-<code>
-  <tags>
-    <tag>love</tag>
-    <verses>
-      <verse id="1" />
-      <verse id="3" />
-      <verse id="4" />
-    </verses>
-  </tags>
-</code>
+    <tags>
+      <tag>love</tag>
+      <verses>
+        <verse id="1" />
+        <verse id="3" />
+        <verse id="4" />
+      </verses>
+    </tags>
 
 ## Update
 
@@ -70,16 +68,14 @@ Creates a tag resource for the verse(s) you pass to it in the body of your XML r
 
 Updates the tag identified by ID=1 with content of the submitted XML. You may also submit the request to /tags/love.xml.
 
-<code>
-  <tags>
-    <tag>love</tag>
-    <verses>
-      <verse id="1" />
-      <verse id="3" />
-      <verse id="4" />
-    </verses>
-  </tags>
-</code>
+    <tags>
+      <tag>love</tag>
+      <verses>
+        <verse id="1" />
+        <verse id="3" />
+        <verse id="4" />
+      </verses>
+    </tags>
 
 
 ## Delete
