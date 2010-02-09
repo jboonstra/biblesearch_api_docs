@@ -21,7 +21,7 @@ Returns a list of all chapters for the specified book resource.
 
 Returns the specific chapter with ID=1.
 
-### GET /versions/1.xml?include=verses
+### GET /chapters/1.xml?include=verses
 
 You may pass an *include* query parameter with value *verses* with your request to retrieve a list of each verse belonging to the specified chapter.
 
