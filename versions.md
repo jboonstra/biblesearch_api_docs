@@ -33,6 +33,6 @@ Returns a specific version with ID=1.
 
 ### GET /versions/1.xml?include=books
 
-You may pass an *include* query parameter with value *books* with your request to retrieve a list book resources belonging to each version (/versions.xml request) or the specified version (for the /versions/1.xml request).
+You may pass an *include* query parameter with value *books* with your request to retrieve a list book resources belonging to the specified version.
 
 [iso]: http://www.loc.gov/standards/iso639-2/php/code_list.php "ISO 639-2 language abbreviations"
