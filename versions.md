@@ -28,11 +28,3 @@ Returns a list of all versions specified by the language parameter.  Use an [ISO
 ### GET /versions/1.xml
 
 Returns a specific version with ID=1.
-
-## Show with Books
-
-### GET /versions/1.xml?include=books
-
-You may pass an *include* query parameter with value *books* with your request to retrieve a list book resources belonging to the specified version.
-
-[iso]: http://www.loc.gov/standards/iso639-2/php/code_list.php "ISO 639-2 language abbreviations"
