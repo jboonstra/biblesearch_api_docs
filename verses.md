@@ -22,7 +22,3 @@ TODO: are there chapters with more than 500 verses?
 ### GET /verses/1.xml
 
 Returns the specific verse resource with ID=1.
-
-### GET /verses/1.xml?include=chapter
-
-You may pass an *include* query parameter with value *chapter* with your request to retrieve the verse's parent chapter resource alongside the requested verse.

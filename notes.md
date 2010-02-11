@@ -5,19 +5,13 @@ title: Notes
 
 # Notes
 
-Notes are annotations you apply to selected Bible verses.  Notes belong to users.
+Notes are annotations you apply to selected Bible verses.  Notes belong to users.  All notes retrieved via API will also include the verses to which they refer.
 
 ## List
 
 ### GET /notes.xml
 
 Returns all of your notes.
-
-## List with verses
-
-### GET /notes.xml?include=verses
-
-You may pass an *include* query parameter with value *verses* with your request to retrieve the verse(s) your notes are assigned to.
 
 ## Show
 
@@ -26,12 +20,6 @@ You may pass an *include* query parameter with value *verses* with your request 
 ### GET /notes/1.xml
 
 Returns the note identified by ID=1.  
-
-## Show with verses
-
-### GET /notes/1.xml?include=verses
-
-You may pass an *include* query parameter with value *verses* with your request to retrieve the verse(s) your note is assigned to.
 
 ## Create
 

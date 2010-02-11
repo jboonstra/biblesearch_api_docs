@@ -28,13 +28,3 @@ Returns a list of only those books identified by the Testament abbreviation for 
 ### GET /books/1.xml
 
 Returns the specified book resource with ID=1.
-
-### GET /books/1.xml?include=version
-
-You may pass an *include* query parameter with value *version* with your request, to enclose your book resource in its parent version resource.
-
-### GET /books/1.xml?include=bookgroup
-
-You may pass an *include* query parameter with value *bookgroup* with your request, to enclose your book resource in its applicable book group resource.
-
-

@@ -29,7 +29,7 @@ TODO: Developers will also be able to grant access to signed-up users via OAuth.
 
 ## Reading (HTTP GET requests)
 
-There are two categories of actions used to read data from the ABS API: list and show.  List actions return a collection of records (such as all versions of the Bibles ABS provides) and may sometimes be filtered by certain criteria described in this documentation.  Each resource typically offers a single show action to return data about that individual resource (a particular book of a particular Bible version, for example).  
+There are two categories of actions used to read data from the ABS API: list and show.  List actions return a collection of records (such as all versions of the Bibles ABS provides) and may sometimes be filtered by certain criteria described in this documentation.  Each resource typically offers a single show action to return data about that individual resource (a particular book of a particular Bible version, for example).  If a resource has a parent resource (a _Version_ is the parent of a _Book_, for example), the child resource includes a _parent_ node linking to the canonical URL of its parent.
 
 You may access all list and show actions via GET requests.  These are easily performed via either the browser or via command line:
 
