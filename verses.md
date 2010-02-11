@@ -11,11 +11,9 @@ Verses are the smallest unit of organization within the ABS Bible texts.  Verses
 
 Book listings may only be requested in the context their chapter parent.
 
-### GET /chapters/#{chapter_id}/verses.xml (with pagination: /verses.xml?n=#{offset})
+### GET /chapters/#{chapter_id}/verses.xml
 
-Returns a list of all verses for the chapter resource specified by #{chapter_id}, paginated in groups of 500.
-
-TODO: are there chapters with more than 500 verses?
+Returns a list of all verses for the chapter resource specified by #{chapter_id}.
 
 ## Show
 
