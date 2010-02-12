@@ -9,17 +9,15 @@ Notes are annotations you apply to selected Bible verses.  Notes belong to users
 
 ## List
 
-### GET /notes.xml
+### GET /user/notes.xml
 
 Returns all of your notes.
 
 ## Show
 
-*Please note:* You may only access the notes you have created yourself.  If you attempt to access a note belonging to someone else, you will receive a "404 Not Found" error.
-
 ### GET /notes/1.xml
 
-Returns the note identified by ID=1.  
+Returns your note identified by ID=1.  
 
 ## Create
 
