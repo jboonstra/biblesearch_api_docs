@@ -27,7 +27,7 @@ Returns the selected tagging with ID=1.  The associated tag and all verses are i
 
 ## Create
 
-### POST /taggings.xml
+### POST /user/taggings.xml
 
 Creates a tagging resource for the tag and verse(s) you pass to it in the body of your XML request.  You must pass either the tag *name* node or *id* node with your request.
 
@@ -46,15 +46,13 @@ Creates a tagging resource for the tag and verse(s) you pass to it in the body o
 
 ### PUT /user/taggings/1.xml
 
-Modifies a tagging resource identified by ID=1 with the tag and verse(s) you pass to it in the body of your XML request.  You may pass either the tag *name* node or *id* node with your request to update the tag used for the tagging.
+Modifies a tagging resource identified by ID=1 with the tag and verse you pass to it in the body of your XML request.  You may pass either the tag *name* node or *id* node with your request to update the tag used for the tagging.
 
     <tagging>
       <tag>
         <name>love</name> <!-- optional -->
       </tag>      
       <verses>
-        <verse id="1" />
-        <verse id="3" />
         <verse id="5" />
       </verses>
     </tagging>
