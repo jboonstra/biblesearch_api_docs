@@ -19,7 +19,7 @@ Returns a list of all verses for the chapter resource specified by #{chapter_id}
 
 ### GET /verses.xml?#{OPTIONS}
 
-You may append a number of querystring options to filter the verses returned:
+You may append a number of optional querystring parameters to filter the verses returned:
 
 * *keyword:* the words(s) you are searching for
 * *precision:* may be "all" to return search results with all keywords or "any" to return search results where any keywords appear
@@ -29,6 +29,8 @@ You may append a number of querystring options to filter the verses returned:
 * *testament:* may be one or several of the [book][book] "testament" values
 * *book:* may be one or several of the [book][book] "abbreviation" values
 * *sort_order:* may be either "canonical" or "relevance"
+* *offset:* may be an integer to request records returned after this number of records.  That is, if the offset is 1000, the records returned will start with the one thousand first record.
+* *limit:* may be an integer to request a maximum number of records be returned.  If provided, *limit* must be less than or equal to 500.
 
 A sample search URL:
 
