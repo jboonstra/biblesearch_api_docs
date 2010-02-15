@@ -21,7 +21,7 @@ Returns a list of all verses for the chapter resource specified by #{chapter_id}
 
 You may append a number of optional querystring parameters to filter the verses returned:
 
-* *keyword:* the words(s) you are searching for
+* *keyword:* the words(s) you are searching for.  **This parameter _must_ be provided.**
 * *precision:* may be "all" to return search results with all keywords or "any" to return search results where any keywords appear
 * *exclude:* any keywords that *should not* appear in the search results
 * *version:* may be one or several of the [version][version] "version" values
