@@ -42,5 +42,5 @@ A sample search URL:
 
 Returns the specific verse resource with ID=1.
 
-[version]: /versions.html "Versions"
-[book]: /books.html "Books"
+[version]: versions.html "Versions"
+[book]: books.html "Books"
