@@ -43,7 +43,11 @@ Command line (using [curl][curl]):
     
 If the read request is successful, the XML response will include the status code "200 OK."
 
-*Please note:* Bible passages are only available via read requests.  Right access is not available for Bible passages.
+*Please note:* Bible passages are only available via read requests.  Right access is not available for Bible passages.  
+
+## Searching (HTTP GET requests)
+
+Keyword-based searches are possible via a particular request to the [Verses resources][verses].
 
 ## Writing (HTTP POST and PUT requests)  
 
@@ -103,3 +107,4 @@ Throughout this documentation, the following conventions are in use:
 [rest]: http://en.wikipedia.org/wiki/Representational_State_Transfer "REST"
 [settings]: 
 [curl]: http://curl.haxx.se/
+[verses]: /verses.html#searching "Verses"
