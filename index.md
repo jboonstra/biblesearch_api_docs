@@ -21,7 +21,7 @@ API Authentication is done via an authentication token, which you'll find on you
 
 Here is an example of how to use [Curl][3] to access our API.  (The dummy password "X" is being passed with this request.)                      
 
-    curl -u YOUR_API_KEY:X http://@ABS_URL/versions/1.xml
+    curl -u YOUR_API_KEY:X http://@ABS_URL/versions/NASB.xml
     
 *Remember to keep your authentication token private.*  Anything you can do via the website you can do via the API, so protect your API token as you would protect your username and password for the website.  If you ever want to change your API token, simply change your account password via the [account settings page][settings], and your API token will be changed as well.
 
@@ -35,15 +35,15 @@ You may access all list and show actions via GET requests.  These are easily per
 
 Browser (load this URL in FireFox):
 
-     http://#{your API token}:@ABS_URL/versions/1.xml
+     http://#{your API token}:@ABS_URL/versions/NASB.xml
 
 Command line (using [curl][curl]):
 
-    curl -u #{your API token}:X http://@ABS_URL/versions/1.xml
+    curl -u #{your API token}:X http://@ABS_URL/versions/NASB.xml
     
 If the read request is successful, the XML response will include the status code "200 OK."
 
-*Please note:* Bible passages are only available via read requests.  Right access is not available for Bible passages.  
+*Please note:* Bible passages are only available via read requests.  Write access is not available for Bible passages.  
 
 ## Searching (HTTP GET requests)
 
