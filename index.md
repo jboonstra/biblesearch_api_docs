@@ -91,11 +91,41 @@ Successful delete requests return the response code "200 OK" and an empty respon
 
 ## Response codes
 
-Successful requests will return HTTP response codes in the 200s, either "201 Created" for actions where you have created content via the ABS API, or "200 OK" for all other queries, updates, or deletions.  For example, a request for a nonexistent resource would return:
+### Successful requests
 
-    HTTP/1.1 404 The record could not be found
-    Date: Thu, 16 Mar 2006 17:41:40 GMT
-    ...
+Successful requests will return HTTP response codes in the 200s.
+
+#### Record selected, updated, or deleted
+
+    HTTP/1.1 200 OK
+
+#### Record created
+
+    HTTP/1.1 201 Created
+
+### Unsuccessful requests
+
+Unsuccessful requests will return HTTP response codes in the 400s.
+     
+#### Malformed request      
+
+If you submit poorly formed XML or JSON to the API, you will receive this response.
+
+    HTTP/1.1 400 Bad Request
+
+#### Authentication credentials needed
+
+    HTTP/1.1 401 Unauthorized
+
+#### Non-existent route or resource
+
+    HTTP/1.1 404 Not Found
+    
+#### Invalid data
+
+When you try to create or update a record with invalid data, you will receive this response.
+
+    HTTP/1.1 422 Unprocessable Entity
 
 ## API conventions           
 
