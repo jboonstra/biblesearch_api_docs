@@ -79,7 +79,7 @@ Error responses from the server will return a response code in the range 400-499
 
 ## Deleting (HTTP DELETE requests)
 
-You may delete content you, yourself, have created by sesnding an HTTP DELETE request:
+You may delete content you, yourself, have created by sending an HTTP DELETE request:
 
     curl -u #{your API TOKEN}:X -X DELETE http://@ABS_URL/tags/5.xml
     
