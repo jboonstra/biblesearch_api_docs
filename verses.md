@@ -24,6 +24,7 @@ You may append a number of optional querystring parameters to filter the verses 
 * *keyword:* the words(s) you are searching for.  **This parameter _must_ be provided.**
 * *precision:* may be "all" to return search results with all keywords or "any" to return search results where any keywords appear
 * *exclude:* any keywords that *should not* appear in the search results
+* *spelling:* may be "yes" to search for keywords like the terms you submitted if your keywords return no results
 * *version:* may be one or several of the [version][version] "version" values
 * *language:* may be one or several of [version][version] "language" values
 * *testament:* may be one or several of the [book][book] "testament" values
@@ -38,9 +39,9 @@ A sample search URL:
 
 ## Show
 
-### GET /verses/1.xml
+### GET /verses/NASB:Acts.8.36.xml
 
-Returns the specific verse resource with ID=1.
+Returns the specific verse resource with ID=NASB:Acts.8.36.
 
 [version]: versions.html "Versions"
 [book]: books.html "Books"

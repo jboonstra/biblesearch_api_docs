@@ -17,6 +17,6 @@ Returns a list of all chapters for the specified book resource.
 
 ## Show
 
-### GET /chapters/1.xml
+### GET /chapters/NASB:Acts.8.xml
 
-Returns the specific chapter with ID=1.
+Returns the specific chapter with ID=NASB:Acts.8.

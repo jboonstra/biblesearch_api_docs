@@ -36,9 +36,9 @@ Creates a tagging resource for the tag and verse(s) you pass to it in the body o
         <name>love</name>
       </tag>      
       <verses>
-        <verse id="1" />
-        <verse id="3" />
-        <verse id="5" />
+        <verse id="NASB:Acts.8.36" />
+        <verse id="NASB:Acts.8.37" />
+        <verse id="NASB:Acts.8.38" />
       </verses>
     </tagging>
 
@@ -53,7 +53,7 @@ Modifies a tagging resource identified by ID=1 with the tag and verse you pass t
         <name>love</name> <!-- optional -->
       </tag>      
       <verses>
-        <verse id="5" />
+        <verse id="NASB:Acts.8.36" />
       </verses>
     </tagging>
 

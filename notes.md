@@ -30,9 +30,9 @@ Creates a note resource for the verse(s) you pass to it in the body of your XML 
         <title>Some Title</title>
         <body>Some body text.</body>
         <verses>
-          <verse id="1" />
-          <verse id="3" />
-          <verse id="5" />
+          <verse id="NASB:Acts.8.36" />
+          <verse id="NASB:Acts.8.37" />
+          <verse id="NASB:Acts.8.38" />
         </verses>
       </note>
     </notes>
@@ -48,9 +48,9 @@ Updates the note identified by ID=1 with content of the submitted XML.
         <title>New Title</title>
         <body>New body text.</body>
         <verses>
-          <verse id="1" />
-          <verse id="3" />
-          <verse id="4" /> 
+          <verse id="NASB:Acts.8.36" />
+          <verse id="NASB:Acts.8.37" />
+          <verse id="NASB:Acts.8.38" />
         </verses>
       </note>
     </notes>

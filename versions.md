@@ -25,6 +25,6 @@ Returns a list of all versions specified by the language parameter.  Use an [ISO
   
 ## Show
     
-### GET /versions/1.xml
+### GET /versions/NASB.xml
 
-Returns a specific version with ID=1.
+Returns a specific version with ID=NASB.
