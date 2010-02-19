@@ -29,32 +29,36 @@ Returns the selected tagging with ID=1.  The associated tag and all verses are i
 
 ### POST /user/taggings.xml
 
-Creates a tagging resource for the tag and verse(s) you pass to it in the body of your XML request.  You must pass either the tag *name* node or *id* node with your request.
+Creates a tagging resource for the tag and verse range you pass to it in the body of your XML request.  You must pass either the tag *name* node or *id* node with your request.  
+
+The verse range must have both a start and an end node, each representing a verse id marking the start and end of the passage you would like to tag.  To tag a single verse, submit the same verse id as both the start and end values.
 
     <tagging>
       <tag>
         <name>love</name>
       </tag>      
-      <verses>
-        <verse id="NASB:Acts.8.36" />
-        <verse id="NASB:Acts.8.37" />
-        <verse id="NASB:Acts.8.38" />
-      </verses>
+      <range>
+        <start>GCEVNU:Acts.8.34</start>
+        <end>GCEVNU:Acts.8.36</end>
+      </range>
     </tagging>
 
 ## Update
 
 ### PUT /user/taggings/1.xml
 
-Modifies a tagging resource identified by ID=1 with the tag and verse you pass to it in the body of your XML request.  You may pass either the tag *name* node or *id* node with your request to update the tag used for the tagging.
+Modifies a tagging resource identified by ID=1 with the tag and verse range you pass to it in the body of your XML request.  You may pass either the tag *name* node or *id* node with your request to update the tag used for the tagging.
+
+The verse range must have both a start and an end node, each representing a verse id marking the start and end of the passage you would like to tag.  To tag a single verse, submit the same verse id as both the start and end values.
 
     <tagging>
       <tag>
         <name>love</name> <!-- optional -->
       </tag>      
-      <verses>
-        <verse id="NASB:Acts.8.36" />
-      </verses>
+      <range>
+        <start>GCEVNU:Acts.8.34</start>
+        <end>GCEVNU:Acts.8.36</end>
+      </range>
     </tagging>
 
 ## Delete
