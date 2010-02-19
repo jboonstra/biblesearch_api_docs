@@ -23,17 +23,18 @@ Returns your note identified by ID=1.
 
 ### POST /notes.xml
 
-Creates a note resource for the verse(s) you pass to it in the body of your XML request.
+Creates a note resource for the verse range you pass to it in the body of your XML request.
+
+The verse range must have both a start and an end node, each representing a verse id marking the start and end of the passage you would like to tag.  To tag a single verse, submit the same verse id as both the start and end values.
 
     <notes>
       <note>
         <title>Some Title</title>
         <body>Some body text.</body>
-        <verses>
-          <verse id="NASB:Acts.8.36" />
-          <verse id="NASB:Acts.8.37" />
-          <verse id="NASB:Acts.8.38" />
-        </verses>
+        <range>
+          <start>GCEVNU:Acts.8.34</start>
+          <end>GCEVNU:Acts.8.36</end>
+        </range>
       </note>
     </notes>
 
@@ -47,11 +48,10 @@ Updates the note identified by ID=1 with content of the submitted XML.
       <note>
         <title>New Title</title>
         <body>New body text.</body>
-        <verses>
-          <verse id="NASB:Acts.8.36" />
-          <verse id="NASB:Acts.8.37" />
-          <verse id="NASB:Acts.8.38" />
-        </verses>
+        <range>
+          <start>GCEVNU:Acts.8.34</start>
+          <end>GCEVNU:Acts.8.36</end>
+        </range>
       </note>
     </notes>
 
