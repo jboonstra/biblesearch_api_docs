@@ -15,6 +15,12 @@ Book listings may only be requested in the context their chapter parent.
 
 Returns a list of all verses for the chapter resource specified by #{chapter_id}.
 
+## References
+
+### GET /chapters/#{chapter_id}/verses.xml?start=GCEVNU:Acts.8.34&end=GCEVNU:Acts.8.36
+
+Returns a collection of verses for the reference specified by the *start* and *end* querystring parameters.  Please note: start and end parameters must belong to a single book.
+
 ## Searching
 
 ### GET /verses.xml?#{OPTIONS}
