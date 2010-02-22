@@ -5,7 +5,7 @@ title: Notes
 
 # Notes
 
-Notes are annotations you apply to selected Bible verses.  Notes belong to users.  All notes retrieved via API will also include the verses to which they refer.
+Notes are annotations you apply to selected Bible verses.  Notes belong to users.  All notes retrieved via API will also include the verse references to which they refer.
 
 ## List
 
@@ -23,18 +23,20 @@ Returns your note identified by ID=1.
 
 ### POST /notes.xml
 
-Creates a note resource for the verse range you pass to it in the body of your XML request.
+Creates a note resource for the verse reference you pass to it in the body of your XML request.
 
-The verse range must have both a start and an end node, each representing a verse id marking the start and end of the passage you would like to tag.  To tag a single verse, submit the same verse id as both the start and end values.
+The verse references must have both a start and an end node, each representing a verse id marking the start and end of the passage you would like to tag.  To tag a single verse, submit the same verse id as both the start and end values.
 
     <notes>
       <note>
         <title>Some Title</title>
         <body>Some body text.</body>
-        <range>
-          <start>GCEVNU:Acts.8.34</start>
-          <end>GCEVNU:Acts.8.36</end>
-        </range>
+        <references>
+          <reference>
+            <start>GCEVNU:Acts.8.34</start>
+            <end>GCEVNU:Acts.8.36</end>
+          </reference>
+        </references>
       </note>
     </notes>
 
@@ -48,10 +50,12 @@ Updates the note identified by ID=1 with content of the submitted XML.
       <note>
         <title>New Title</title>
         <body>New body text.</body>
-        <range>
-          <start>GCEVNU:Acts.8.34</start>
-          <end>GCEVNU:Acts.8.36</end>
-        </range>
+        <references>
+          <reference>
+            <start>GCEVNU:Acts.8.34</start>
+            <end>GCEVNU:Acts.8.36</end>
+          </reference>
+        </references>
       </note>
     </notes>
 

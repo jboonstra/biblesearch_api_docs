@@ -5,7 +5,7 @@ title: Tags
 
 # Tags
 
-Tags are annotations applied to selected Bible verses.  Tags belong to users.  Individual tags retrieved via API will also include the verses to which they refer.                                                                             
+Tags are annotations applied to selected Bible verses.  Tags belong to users.  Individual tags retrieved via API will also include the verse references to which they refer.                                                                             
 
 ## List
 
@@ -13,13 +13,13 @@ Tags are annotations applied to selected Bible verses.  Tags belong to users.  I
 
 Returns all, site-wide tags.  
 
-*Please note:* This request for all tags *will not* include their verses.
+*Please note:* This request for all tags *will not* include their verse references.
 
 ### GET /user/tags.xml
 
 Returns a list of tags for your user.
 
-*Please note:* This request for all tags *will not* include their verses.
+*Please note:* This request for all tags *will not* include their verse references.
 
 ## Show
 
