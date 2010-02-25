@@ -30,7 +30,7 @@ The verse references must have both a start and an end node, each representing a
     <notes>
       <note>
         <title>Some Title</title>
-        <body>Some body text.</body>
+        <content>Some body text.</content>
         <references>
           <reference>
             <start>GCEVNU:Acts.8.34</start>
@@ -49,7 +49,7 @@ Updates the note identified by ID=1 with content of the submitted XML.
     <notes>
       <note>
         <title>New Title</title>
-        <body>New body text.</body>
+        <content>New body text.</content>
         <references>
           <reference>
             <start>GCEVNU:Acts.8.34</start>
