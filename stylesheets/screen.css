@@ -5,3 +5,7 @@
 #content.site {
   width: 59em;
 }
+
+#header .actions a{
+  margin-left: 10px;
+}
