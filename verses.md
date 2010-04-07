@@ -17,9 +17,18 @@ Returns a list of all verses for the chapter resource specified by #{chapter_id}
 
 ## References
 
-### GET /chapters/#{chapter_id}/verses.xml?start=GCEVNU:Acts.8.34&end=GCEVNU:Acts.8.36
+### GET /chapters/#{chapter_id}/verses.xml?start=1&end=14
 
-Returns a collection of verses for the reference specified by the *start* and *end* querystring parameters.  Please note: start and end parameters must belong to a single book.
+Returns a collection of verses for the reference specified by the *start* and *end* querystring parameters.  Please note: start and end parameters represent the verse *number* attribute.
+
+## Passages
+
+### GET /#{version}/verses.xml?passage=John+3:1
+
+### GET /#{version}/verses.xml?passage=John+3:1-14
+
+
+Returns a collection of verses for the passage specified by the *passage* querystring parameter.  The Bible *version* must also be specified using the [version][version] "version" value.  If the passage requested does not exist (the book name is misspelled, for example), the Biblesearch application will return the passage matching your request.
 
 ## Searching
 
