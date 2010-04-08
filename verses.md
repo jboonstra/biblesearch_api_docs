@@ -27,8 +27,7 @@ Returns a collection of verses for the reference specified by the *start* and *e
 
 ### GET /#{version}/verses.xml?passage=John+3:1-14
 
-
-Returns a collection of verses for the passage specified by the *passage* querystring parameter.  The Bible *version* must also be specified using the [version][version] "version" value.  If the passage requested does not exist (the book name is misspelled, for example), the Biblesearch application will return the passage matching your request.
+Returns a collection of verses for the passage specified by the *passage* querystring parameter.  The Bible *version* must also be specified using the [version][version] "version" value.  The passage request will be parsed, and misspelled book names or abbreviations will be corrected if possible.
 
 ## Searching
 
