@@ -11,7 +11,7 @@ The ABS BS API is available via XML requests served over HTTP using [RESTful res
 
 Because the ABS BS API is accessible via HTTP, you may use a regular browser to view all GET requests for the API.  We recommend using Firefox for this, since it will happily render XML in the browser.  For many URLs in the ABS BS application, you may simply append .xml to the URL to retrieve the corresponding API response for that URL.  For example, /versions/niv/books becomes /versions/niv/books.xml to retrieve the XML version.
 
-You may also retrieve JSON responses from the ABS BS application by appending .json to the request URL.  For example, /versions/niv/books becomes /versions/niv/books.json to retrieve the JSON version.
+You may also retrieve JSON responses from the ABS BS application by appending .js to the request URL.  For example, /versions/niv/books becomes /versions/niv/books.js to retrieve the JSON version.
 
 ## Authentication
 
