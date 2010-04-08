@@ -23,9 +23,9 @@ Returns a collection of verses for the reference specified by the *start* and *e
 
 ## Passages
 
-### GET /#{version}/verses.xml?passage=John+3:1
+### GET /verses.xml?passage=john+3:1&version=#{VERSION} 
 
-### GET /#{version}/verses.xml?passage=John+3:1-14
+### GET /verses.xml?passage=john+3:1-16&version=#{VERSION} 
 
 Returns a collection of verses for the passage specified by the *passage* querystring parameter.  The Bible *version* must also be specified using the [version][version] "version" value.  The passage request will be parsed, and misspelled book names or abbreviations will be corrected if possible.
 
