@@ -25,8 +25,6 @@ Here is an example of how to use [Curl][3] to access our API.  (The dummy passwo
     
 *Remember to keep your authentication token private.*  Anything you can do via the website you can do via the API, so protect your API token as you would protect your username and password for the website.  If you ever want to change your API token, simply change your account password via the [account settings page][settings], and your API token will be changed as well.
 
-TODO: Developers will also be able to grant access to signed-up users via OAuth.  This way users can use a third-party app built on the API to access their own account information while keeping that information private.
-
 ## Reading (HTTP GET requests)
 
 There are two categories of actions used to read data from the ABS API: list and show.  List actions return a collection of records (such as all versions of the Bibles ABS provides) and may sometimes be filtered by certain criteria described in this documentation.  Each resource typically offers a single show action to return data about that individual resource (a particular book of a particular Bible version, for example).  If a resource has a parent resource (a _Version_ is the parent of a _Book_, for example), the child resource includes a _parent_ node linking to the canonical URL of its parent.
