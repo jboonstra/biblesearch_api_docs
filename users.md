@@ -19,7 +19,7 @@ Returns your user resource.
 
 ## Create
 
-_No create action is available for the User resource.  (Users must be created by signing up to ABS BS application via the website.)_
+_No create action is available for the User resource.  (Users must be created by signing up to ABS Bible Search application via the website.)_
 
 TODO: Is this correct?  Should users only be able to sign up via web?
 
@@ -31,6 +31,6 @@ Update your user account with content of the submitted XML.
 
 ## Delete
 
-_No delete action is available for the User resource.  (Users must be deleted by canceling your account via the  ABS BS website.)_
+_No delete action is available for the User resource.  (Users must be deleted by canceling your account via the  ABS Bible Search website.)_
 
 TODO: Is this correct?  Should users only be able to unsubscribe via the website?

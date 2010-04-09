@@ -3,21 +3,21 @@ layout: default
 title: Introduction
 ---
 
-# ABS BibleSearch API Documentation
+# ABS Bible Search API Documentation
 
 ## Introduction
 
-The ABS BS API is available via XML requests served over HTTP using [RESTful resources][rest].  Accessing Bible passages via API is a read-only process; you may access this content via HTTP GET requests.  To interact with user-specific features like accounts, tags, and notes, you may read and write to the API using all four HTTP verbs (GET/POST/PUT/DELETE).  
+The ABS Bible Search API is available via XML requests served over HTTP using [RESTful resources][rest].  Accessing Bible passages via API is a read-only process; you may access this content via HTTP GET requests.  To interact with user-specific features like accounts, tags, and notes, you may read and write to the API using all four HTTP verbs (GET/POST/PUT/DELETE).  
 
-Because the ABS BS API is accessible via HTTP, you may use a regular browser to view all GET requests for the API.  We recommend using Firefox for this, since it will happily render XML in the browser.  For many URLs in the ABS BS application, you may simply append .xml to the URL to retrieve the corresponding API response for that URL.  For example, /versions/niv/books becomes /versions/niv/books.xml to retrieve the XML version.
+Because the ABS Bible Search API is accessible via HTTP, you may use a regular browser to view all GET requests for the API.  We recommend using Firefox for this, since it will happily render XML in the browser.  For many URLs in the ABS Bible Search application, you may simply append .xml to the URL to retrieve the corresponding API response for that URL.  For example, /versions/niv/books becomes /versions/niv/books.xml to retrieve the XML version.
 
-You may also retrieve JSON responses from the ABS BS application by appending .js to the request URL.  For example, /versions/niv/books becomes /versions/niv/books.js to retrieve the JSON version.
+You may also retrieve JSON responses from the ABS Bible Search application by appending .js to the request URL.  For example, /versions/niv/books becomes /versions/niv/books.js to retrieve the JSON version.
 
 ## Authentication
 
 All requests to the ABS API are authenticated via an existing ABS user account -- you do not need a special API user account to access the API.  All users have full read access to all Bible passages.  For user-specific content such as account information, tags, and notes, users have full read and write access, but only to their own content.
 
-API Authentication is done via an authentication token, which you'll find on your [account settings page][settings] in the ABS BS application.  Every request must include your API key.  If necessary for your development environment, you may pass a dummy password along with your request.
+API Authentication is done via an authentication token, which you'll find on your [account settings page][settings] in the ABS Bible Search application.  Every request must include your API key.  If necessary for your development environment, you may pass a dummy password along with your request.
 
 Here is an example of how to use [Curl][3] to access our API.  (The dummy password "X" is being passed with this request.)                      
 
