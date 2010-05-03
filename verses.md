@@ -23,11 +23,13 @@ Returns a collection of verses for the reference specified by the *start* and *e
 
 ## Passages
 
-### GET /verses.xml?passage=john+3:1&version=#{VERSION} 
+### GET /verses.xml?passage=john+3:1&version=\#{VERSION}
 
-### GET /verses.xml?passage=john+3:1-16&version=#{VERSION} 
+### GET /verses.xml?passage=john+3:1-16&version=\#{VERSION} 
 
 Returns a collection of verses for the passage specified by the *passage* querystring parameter.  The Bible *version* must also be specified using the [version][version] "version" value.  The passage request will be parsed, and misspelled book names or abbreviations will be corrected if possible.
+
+Only a single version and passage may be requested.  If the BibleSearch application can find a passage matching the querystring parameters, it will perform a redirect to the canonical URL for the requested passage and respond with a a nested chapter and verse recordset.
 
 ## Searching
 
