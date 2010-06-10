@@ -29,7 +29,7 @@ Returns a collection of verses for the reference specified by the *start* and *e
 
 Returns a collection of verses for the passage specified by the *passage* querystring parameter.  The Bible *version* must also be specified using the [version][version] "version" value.  The passage request will be parsed, and misspelled book names or abbreviations will be corrected if possible.
 
-Only a single version and passage may be requested.  If the BibleSearch application can find a passage matching the querystring parameters, it will perform a redirect to the canonical URL for the requested passage and respond with a a nested chapter and verse recordset.
+Only a single version and passage may be requested.  If the BibleSearch application can find a passage matching the querystring parameters, it responds with a 302 status code, and a Location header that contains the canonical URL for the requested passage.  The client must request that canonical URL to fetch a response with a nested chapter and verse recordset.  Most client software (such as curl) can be configured to automatically follow Location headers when a 302 status code is returned.
 
 ## Searching
 
